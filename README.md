@@ -1,6 +1,3 @@
-## Getting Started
+## AİRBNB Clone
 
-next-js-13 projext start template
-```console
-pnpx create-next-app -e https://github.com/dukeofsoftware/next-project-starter
-```
+[Code With Antonio](https://www.youtube.com/watch?v=c_-b_isI4vg&t=332s) yardımıyla yaptığım airbnb clon'u
