@@ -1,0 +1,40 @@
+{
+  "name": "next-js-template",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format": "prettier --write --config prettier.config.js \"**/*.{ts,js,tsx,jsx,json}\"",
+    "serve": "yarn build && yarn start"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^13.3.0",
+    "next": "^13.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.10",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.34.0",
+    "postcss": "^8.4.21",
+    "prettier": "^2.8.4",
+    "prettier-plugin-tailwindcss": "^0.2.2",
+    "tailwindcss": "^3.3.1",
+    "tailwindcss-debug-screens": "^2.2.1",
+    "typescript": "^4.9.5"
+  }
+}
