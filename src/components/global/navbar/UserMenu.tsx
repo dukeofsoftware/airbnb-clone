@@ -2,7 +2,7 @@
 import { Avatar } from "@/components/ui";
 import useLoginModal from "@/hooks/useLoginModal";
 import useRegisterModal from "@/hooks/useRegisterModal";
-import { SafeUser } from "@/types/user";
+import { SafeUser } from "@/types/";
 import { signOut } from "next-auth/react";
 import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
