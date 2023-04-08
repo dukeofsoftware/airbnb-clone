@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/global";
 import { Providers, ToasterProvider } from "@/components/providers";
-import { RegisterModal } from "@/components/ui";
+import { LoginModal, RegisterModal } from "@/components/ui";
+import getCurrentUser from "@/lib/actions/getCurrentUser";
 import "@/styles/globals.css";
 
 import { Nunito } from "next/font/google";
@@ -12,11 +13,12 @@ export const metadata = {
   description: "Airbnb clone",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const currentUser = await getCurrentUser();
   return (
     <html lang="tr">
       <body
@@ -26,8 +28,9 @@ export default function RootLayout({
         }
       >
         <Providers>
-          <RegisterModal title="Hello World" isOpen actionLabel="Submit" />
-          <Navbar />
+          <RegisterModal />
+          <LoginModal />
+          <Navbar currentUser={currentUser} />
           {children}
         </Providers>
       </body>
